@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>TeenyJS</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="fonts.css"/>
+	</head>
+	<body>
+		<div class="browserWarning">
+			You are not using <a href="https://www.google.co.za/chrome/browser/desktop/index.html" target="_blank">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> as your browser. This site might not work correctly on your browser.
+			<a href="#" id="closeWarning">Close</a>
+		</div>
+		<div class="center">
+			<div class="section upload">
+				<div>
+					<i class="icon-folder-upload"></i>
+					<h2>Drag and Drop files</h2>
+					<h3>Or click to select files</h3>
+				</div>
+				<input type="file" id="fileInput" class="fileInput" multiple/>
+			</div>
+			<div class="settings">
+				<div class="section resize">
+					<h2>Resize</h2>
+					<label for="imageWidthPX">Width</label>
+					<div>
+						<input type="text" id="imageWidthPX"/>
+					</div>
+					<label for="imageHeightPX">Height</label>
+					<div>
+						<input type="text" id="imageHeightPX"/>
+					</div>
+					<label for="usePerc">Use Percentage</label>
+					<div>
+						<input type="checkbox" id="usePerc"/>
+					</div>
+					<label for="imageSizePerc">Percentage</label>
+					<div>
+						<input type="text" id="imageSizePerc"/>
+					</div>
+				</div>
+				<div class="section rotate">
+					<h2>Rotate</h2>
+					<label>None</label>
+					<input type="radio" name="rotation" id="rotateNone" checked value="none"/>
+					<label>90CW</label>
+					<input type="radio" name="rotation" id="rotate90CW" value="90CW"/>
+					<label>180</label>
+					<input type="radio" name="rotation" id="rotate180CW" value="180"/>
+					<label>90 CCW</label>
+					<input type="radio" name="rotation" id="rotate90CCW" value="90CCW"/>
+				</div>
+				<div class="section output">
+					<h2>Output</h2>
+					<label for="outputFileName">Output File Name</label>
+					<input file="type" id="outputFileName">
+					<label>File type</label>
+					<label for="formatJpg" class="fileTypeLabel">JPG</label>
+					<input type="radio" name="imageFormat" id="formatJpg" value="image/jpeg" checked/>
+					<label for="formatPng" class="fileTypeLabel">PNG</label>
+					<input type="radio" name="imageFormat" id="formatPng" value="image/png"/>
+					<label>Quality</label>
+					<input type="number" id="imageQuality" value="80"/>
+				</div>
+			</div>
+			<canvas id="canvasImage" style="display: none;"></canvas>
+			<a href="" id="download" class="download" download="">Download image</a>
+		</div>
+		<script src="main.js"></script>
+
+	</body>
+</html>

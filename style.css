@@ -1,0 +1,128 @@
+html, body 
+{
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica";
+	color: #909090;
+	background: #ffffff;
+}
+
+h2
+{
+	font-family: "Helvetica";
+}
+
+.center
+{
+	width: 640px;
+	height: 100%;
+	margin: 0 auto;
+	background: #65C6BB;
+}
+
+.section
+{
+	/*padding: 20px;*/
+}
+
+.settings, .settings .section h2
+{
+	color: #ffffff!important;
+}
+
+.upload
+{
+	height: 230px;
+	padding-top: 30px;
+	background: #fcfcfc;
+}
+
+.upload i
+{
+	color: #dedede;
+	display: block;
+	text-align: center;
+	font-size: 95px;
+}
+
+.fileInput
+{
+	width: 640px;
+	height: 260px!important;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+}
+
+.section h2 
+{
+	text-align: center;
+	color: #909090;
+}
+
+.section h3
+{
+	text-align: center;
+	color: #909090;
+}
+
+.section label
+{
+	padding: 10px;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+}
+
+.fileTypeLabel
+{
+	font-size: 12px!important;
+}
+
+.section input
+{
+	height: 25px;
+	margin: 0 auto;
+	display: block;
+	color: #909090;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	text-align: center;
+}
+
+.download
+{
+	visibility: hidden;
+}
+
+.resize, .rotate, .output
+{
+	width: 33%;
+	height: 300px;
+	float: left;
+}
+
+.browserWarning
+{
+	width: 100%;
+	height: 35px;
+	padding-top: 15px;
+	background: red;
+	color: #ffffff;
+	text-align: center;
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.browserWarning a
+{
+	color: #ffffff;
+}
